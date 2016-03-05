@@ -1,0 +1,20 @@
+set directory=$HOME/.vim/swap
+set nobackup
+
+syntax on
+set number
+set expandtab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+"set foldmethod=marker
+
+set nohlsearch
+
+set list
+set listchars=tab:*-
+
+set laststatus=2
+set statusline=%F%m%r%h%w\ [%{&ff}][%{&fenc}]\ %l,%v
+
+autocmd FileType * set formatoptions-=ro
