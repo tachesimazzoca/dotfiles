@@ -18,3 +18,7 @@ set laststatus=2
 set statusline=%F%m%r%h%w\ [%{&ff}][%{&fenc}]\ %l,%v
 
 autocmd FileType * set formatoptions-=ro
+
+filetype plugin on
+
+execute pathogen#infect()
