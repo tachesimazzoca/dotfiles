@@ -32,5 +32,8 @@ update:
 	@$(call fetch_git_repo, \
 		"https://github.com/hashivim/vim-terraform.git", \
 		"$(DOT_DIR)/bundle/vim-terraform")
+	@$(call fetch_git_repo, \
+		"https://github.com/elzr/vim-json.git", \
+		"$(DOT_DIR)/bundle/vim-json")
 	@cp files/vimrc $(HOME)/.vimrc
 	@cp files/gvimrc $(HOME)/.gvimrc
