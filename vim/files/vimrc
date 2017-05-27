@@ -2,6 +2,8 @@ set directory=$HOME/.vim/swap
 set nobackup
 
 syntax on
+colorscheme ansi
+
 set number
 set expandtab
 set tabstop=2

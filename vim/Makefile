@@ -19,6 +19,7 @@ update:
 	@mkdir -p "$(DOT_DIR)/swap"
 	@rm -rf "$(DOT_DIR)/ftdetect" && cp -R files/ftdetect "$(DOT_DIR)/."
 	@rm -rf "$(DOT_DIR)/syntax" && cp -R files/syntax "$(DOT_DIR)/."
+	@rm -rf "$(DOT_DIR)/colors" && cp -R files/colors "$(DOT_DIR)/."
 	@mkdir -p "$(DOT_DIR)/autoload" && \
 		curl -LSso "$(DOT_DIR)/autoload/pathogen.vim" https://tpo.pe/pathogen.vim
 	@mkdir -p "$(DOT_DIR)/bundle"
@@ -32,3 +33,4 @@ update:
 		"https://github.com/hashivim/vim-terraform.git", \
 		"$(DOT_DIR)/bundle/vim-terraform")
 	@cp files/vimrc $(HOME)/.vimrc
+	@cp files/gvimrc $(HOME)/.gvimrc
