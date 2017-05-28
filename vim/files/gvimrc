@@ -1,13 +1,12 @@
-colorscheme ansi
-
 set columns=120
 set lines=40
 
-" MacVim
-set guifont=Monaco:h12
-set noantialias
-" GNOME
-"set guifont=Monospace\ 8
-"set antialias
+if has('macunix')
+  set guifont=Monaco:h12
+  set noantialias
+elseif has('unix')
+  set guifont=Monospace\ 8
+  set antialias
+endif
 
 set guioptions-=T
