@@ -5,7 +5,7 @@ if has('macunix')
   set guifont=Monaco:h12
   set noantialias
 elseif has('unix')
-  set guifont=Monospace\ 8
+  set guifont=Source\ Han\ Code\ JP\ N\ 8
   set antialias
 endif
 
