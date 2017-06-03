@@ -2,8 +2,9 @@ set columns=120
 set lines=40
 
 if has('macunix')
-  set guifont=Monaco:h12
-  set noantialias
+  set guifont=Source\ Han\ Code\ JP\ N:h11
+  set antialias
+  set macthinstrokes
 elseif has('unix')
   set guifont=Source\ Han\ Code\ JP\ N\ 8
   set antialias
