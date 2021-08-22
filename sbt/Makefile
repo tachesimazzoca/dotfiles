@@ -1,5 +1,5 @@
 DOT_DIR="$(HOME)/.sbt"
-SBT_VERSION=0.13.11
+SBT_VERSION=1.5.5
 
 all: build
 
@@ -7,7 +7,7 @@ all: build
 build:
 	@echo "Downloading sbt-$(SBT_VERSION)"
 	@mkdir -p target && rm -rf target/*
-	@cd target && curl -LO "http://dl.bintray.com/sbt/native-packages/sbt/$(SBT_VERSION)/sbt-$(SBT_VERSION).zip" && unzip "sbt-$(SBT_VERSION).zip"
+	@cd target && curl -LO "https://github.com/sbt/sbt/releases/download/v$(SBT_VERSION)/sbt-$(SBT_VERSION).zip" && unzip "sbt-$(SBT_VERSION).zip"
 
 .PHONY: install
 install:
