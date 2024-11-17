@@ -1,5 +1,5 @@
 DOT_DIR="$(HOME)/.sbt"
-SBT_VERSION=1.5.5
+SBT_VERSION=1.10.5
 
 all: build
 
